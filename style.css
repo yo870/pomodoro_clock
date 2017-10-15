@@ -1,0 +1,179 @@
+html, body {
+	display: block;
+	margin: 0 0;
+	padding: 0 0;
+	height: 100%;
+	width: 100%;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 14px;
+	color : white;
+}
+
+body {
+	transition: background 3s;
+	background: no-repeat center center;
+	background-size: cover; 
+	background-image: url(img/intro.jpg);
+}
+
+
+h1 {
+  font-weight:bold; 
+  font-size: 5em;
+  margin: 0 auto;
+  text-align: center;
+ }
+
+ h4 {
+  font-weight:bold; 
+  font-size: 2em;
+  margin: 2% auto;
+ }
+
+ h3 {
+  font-weight:bold; 
+  font-size: 2.5em;
+  margin: auto auto;
+ }
+
+.timeset {
+	display:flex;
+	text-align: center;
+	margin: 6% auto 1% auto;
+	max-width: 750px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.arrowscontainer {
+	display: inline;
+}
+
+.timegroups {
+	margin: 2%;
+	flex: 1 0 25%;
+	padding-right: 2%;
+	padding-left: 2%;
+	box-sizing: border-box;
+}
+
+#blength, #wlength {
+	min-height: 60px;
+}
+
+.activetime {
+	border-bottom: solid white 5px;
+	box-sizing: border-box !important;
+}
+
+.timemodif {
+	display: flex;
+	justify-content: center;
+}
+
+#breaktime, #worktime {
+	flex: 0 0 165px;
+	padding: 0 5%;
+}
+
+#barrowscontainer, #warrowscontainer {
+	flex: 1 0 auto;
+	padding: 0 5%;
+}
+
+#barrowscontainer, #breaktime {
+	text-align: right;
+}
+
+#warrowscontainer, #worktime {
+	text-align: left;
+}
+
+
+#time {
+	display:flex;
+	max-width: 400px;
+	text-align: center;
+	flex-wrap: nowrap;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#hours, #minutes, #seconds, .sep {
+	flex: 0 1 100px;
+}
+
+.sep {
+	flex: 0 2 20px;
+}
+
+button {
+	display: block;
+	width: 400px;
+	margin: 1% auto 0 auto !important;
+	font-size: 2.5em;
+	color: white;
+	background: transparent;;
+	outline: none;
+	text-decoration: none;
+	border: solid 3px white;
+	cursor: pointer;
+}
+
+button:active {
+	background: white;
+	color: black;
+}
+
+#bup, #bdown, #wup, #wdown {
+	cursor: pointer;
+}
+
+#bup:active, #bdown:active, #wup:active, #wdown:active {
+	color: black;
+}
+
+
+footer {
+ 	width: 80%;
+	border-top: solid grey 1px;
+ 	margin: 5% auto 2% auto;
+	text-align: center;
+	}
+
+footer p a {
+	text-decoration: none !important;
+	color: white;
+	font-weight: bold !important; 
+}
+
+footer p {
+ 	text-align: center;
+	font-size: 12px
+ 	}
+
+@media only screen and (max-width: 730px) {
+    html, body {
+        font-size: 10px !important;
+    }
+	h1 {
+		margin-top: 4%;
+		font-size: 4em;
+	}
+	.timeset {
+		max-width: 410px;
+	}
+	#breaktime, #worktime {
+		flex: 0 0 90px;
+	}
+	#blength, #wlength {
+		min-height: 40px;
+	}
+	#time {
+		max-width: 230px;
+	}
+	button {
+		width: 230px;
+	}
+}
